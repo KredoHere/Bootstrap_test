@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl_PL">
+  <head>
+    <title>LOLE</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <style>
+   input {
+      border: solid;
+      border-width: 1px;
+      background-color: #e6e6e6;
+      border-radius: 7px;
+      border-color: #b3b3b3;
+padding: 6px;
+      }
+      .no-outline:focus {
+      outline: none;
+      }
+      body{
+background-color: #cccccc;
+    height: 90%;      
+      }
+      .box{
+background-color: #595959;      
+      }
+      .logowanie{
+      font-family: monospace;
+      font-size: 15px;
+      }
+      .but{
+ -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;      
+      }
+      .but:hover{
+background-color: #8c8c8c;
+transition-duration: 0.3s;      
+      }
+      
+      html {
+    height: 100%;
+}
+
+      </style>
+  </head>
+  <body>
+  <div class="box">
+<img src="logo.png" width="13%" height="auto" style="padding: 2px;">
+</div>
+ <div class="container-fluid d-flex h-100 flex-column">
+<div class="row flex-grow-1" style="margin-left: 10%; margin-right: 10%; height: 87%;">
+  <div class="col"></div>
+  <div class="col"  style="margin-top: 10%;">
+<form>
+<div class="logowanie">
+Adres E-mail<br> <input type="text" name="Adres E-mail" placeholder="Wpisz adres E-mail" size="35"><br>
+<br>Hasło<br> <input type="password" name="Hasło" placeholder="Wpisz hasło" size="35" id="myInput"><br>
+<p style="padding-top: 5px;">Pokaż znaki <input type="checkbox" onclick="pokazznaki()"></p>
+</div>
+<input type="submit" value="Zaloguj" class="but">
+</form>
+  </div>
+<div class="col"></div>
+</div>
+<script>
+            function pokazznaki() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
